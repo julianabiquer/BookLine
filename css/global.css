@@ -22,6 +22,118 @@ button {
 
 }
 
-input, input:focus{
+input{
     border: none;
+    outline: none;
+}
+
+header{
+    width: 100%;
+}
+
+.header-anuncio{
+    height: 40px;
+    padding: 0 12px;
+    margin-bottom: 2px;
+    background-color: var(--corPrincipal);
+    color: var(--corPrincipalClara);
+    font-size: 1rem;
+    justify-content: space-between;
+}
+
+.header-anuncio a {
+    color: var(--corPrincipalClara);
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+.header-anuncio a:last-child::after {
+    content: url("../img/icon/question-circle.svg");
+    position: relative;
+    left: 8px;
+    top: 2px;
+}
+
+.separador {
+    background-color: var(--corPrincipalClara);
+    height: 20px;
+    width: 1px;
+    opacity: .2;
+}
+
+@media (max-width: 800px) {
+    .header-anuncio p {
+        display: none;
+    }
+    .header-logo {
+        font-size: 1rem;
+    }
+}
+
+
+
+.header-logo {
+    background-color: var(--corPrincipalEscura);
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+    font-family: var(--fontPop);
+}
+
+.header-logo img {
+    width: 100px;
+}
+
+.header-logo a {
+    color: var(--corPrincipalClara);
+    padding: 10px;
+    font-size: 1.25rem;
+    position: relative;
+}
+
+.header-logo a::before {
+    content: var(--icon);
+    position: relative;
+    right: 8px;
+    top: 2px;
+}
+
+.header-logo nav {
+    gap: 10px;
+}
+
+.header-logo nav .header-btn-cmp {
+    padding: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.header-logo nav a::after {
+    display: block;
+    content: "";
+    background-color: var(--corPrincipalClara);
+    width: 0px;
+    height: 2px;
+    transition: all .5s ease-out;
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+}
+
+.header-logo nav a:hover::after {
+    width: calc(100% - 33px);
+}
+
+.menu3 {
+    border-block: 2px solid black;
+    gap: 20px;
+    width: 100%;
+}
+
+.menu3 a {
+    color: black;
+    padding: 10px;
+    transition: .5s;
+    font-weight: 600;
+    font-family: var(--fontPop);
 }
