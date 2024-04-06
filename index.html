@@ -10,18 +10,18 @@
 </head>
 
     <header>
-        <div class="header-anuncio flex">
-            <p>Tenha acesso a compra de livros com ótima qualidade e preço acessível</p>
-            <nav class="flex" aria-label="primaria">
-                <a href="#">Anuncie Aqui</a>
-                <span class="separador flex"></span>
-                <a href="#">Saiba Mais</a>
-                <span class="separador flex"></span>
-                <a href="#">Central de Ajuda</a>
-            </nav>
-        </div>
         <div class="header-logo flex">
-            <img src="./img/logo.png" alt="">
+            <img class="logo" src="./img/logo.png" alt="">
+            <div class="search">
+                <button class="categorias flex">
+                    <img src="./img/icon/menu.svg" alt="">
+                    <p>Categorias</p>
+                </button>
+                <div class="pesquisa-bar flex">
+                    <label for="search-inp"><img src="./img/icon/search.svg" alt=""></label>
+                    <input type="text" id="search-inp" placeholder="Faça sua busca aqui!">
+                </div>
+            </div>
             <nav class="flex">
                 <a href="#" style="--icon: url('../img/icon/heart.svg');">Meus Favoritos</a>
                 <a href="./html/login.html" style="--icon: url('../img/icon/person.svg');">Cadastra-se</a>
@@ -32,25 +32,24 @@
                 </a>
             </nav>
         </div>
-        <div>
-            <div class="menu3 flex">
-            <a href="">Faça sua Reserva</a>
-                <a href="">Cafeteria </a>
-                <a href="">Novos escritores</a>
-                <a href="">Games
-                <a href="">Região</a>
-        </div>
     </header>
-<div class="search">
-    <button class="categorias flex">
-        <img src="./img/icon/menu.svg" alt="">
-        <p>Categorias</p>
-    </button>
-    <div class="pesquisa-bar flex">
-        <label for="search-inp"><img src="./img/icon/search.svg" alt=""></label>
-        <input type="text" id="search-inp" placeholder="Faça sua busca aqui!">
-    </div>
-</div>
+    <main>
+        <section class="livro-popular">
+            <h1>Livros mais vendidos:</h1>
+            <div class="lp-container">
+                <div class="caixaDoLivro">
+                    <figure class="book-img">
+                        <img src="" alt="">
+                    </figure>
+                    <div class="book-info">
+                        <h3 class="book-title">Extraordinário</h3>
+                        <p class="book-author"> R. J. Palacio</p>
+                        <p class="book-price">Apenas: R$ 21,53</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="./jsfront/javafront.js"></script>
 </body>
 </html>

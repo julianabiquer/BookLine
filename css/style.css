@@ -1,5 +1,5 @@
 @import url(./global.css);
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
     margin: 0%;
@@ -10,22 +10,37 @@
 }
 
 :root {
-    --corPrincipal: #396d5b;
-    --corPrincipalClara: #e8fff7;
-    --corPrincipalEscura: #0e3829;
-    --fontPop: "Poppins", Arial;;
+    --CP1: #305435;
+    --CP2:#38653C;
+    --CP3:#3E8748;
+    --CP4:#3CCA53;
+    --CP5:#38F393;
+    --CP6: #F3FFF5;
+    --B1: #000000;
+    --B2: #1A1A1A;
+    --B3: #2E2E2E;
+    --B4: #404040;
+    --B5: #404040;
+    --B6: #6D6D6D;
+    --B7: #ABAAAA;
+    --B8: #BFBFBF;
+    --B9: #D1D1D1;
+    --B10: #E6E6E6;
+    --B11: #F6F5F5;
+    --B12: #FFFFFF;
+    --fonteTitulo: "Averia Serif Libre", Arial;
+    --fonteTexto:"Roboto", sans-serif;
 }
-
-
 
 .search {
     display: grid;
     grid-template-columns: auto 2fr;
     border: 2px solid var(--corPrincipal);
-    max-width: 80%;
+    width: clamp(300px, 50%, 1200px);
     margin: 30px auto;
     border-radius: 5px;
     gap: 10px;
+    background-color: var(--corPrincipalClara);
 }
 
 .search .categorias {
@@ -48,4 +63,11 @@
 .search .pesquisa-bar input {
     height: 100%;
     width: 100%;
+    background-color: var(--corPrincipalClara);;
+}
+
+.livro .popular{
+    height: 420px;
+    width: 210px;
+    background-color: white;
 }
